@@ -2,4 +2,20 @@
 *.class
 *.war
 *.log*
+*.lck
+*.fdt
+*.fdx
+*.fnm
+*.nvd
+*.nvm
+*.si
+*.doc
+*.pos
+*.tim
+*.tip
+segments_*
+index/*
+data/*
+/example/example-DIH/hsqldb/
+/example/example-DIH/solr/tika/data/
 
