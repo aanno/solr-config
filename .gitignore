@@ -18,4 +18,7 @@ index/*
 data/*
 /example/example-DIH/hsqldb/
 /example/example-DIH/solr/tika/data/
+dataimport.properties
+/bin/*.pid
+/example/exampledocs/ebooks
 
