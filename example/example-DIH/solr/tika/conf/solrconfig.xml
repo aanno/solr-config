@@ -58,4 +58,17 @@
     </lst>
   </requestHandler>
 
+  <updateProcessor class="org.github.aanno.solr.importplugin.ImportRequestProcessorFactory" name="import">
+    <bool name="enabled">true</bool>
+    <str name="signatureField">id</str>
+    <bool name="overwriteDupes">false</bool>
+    <str name="fields">name,features,cat</str>
+    <str name="signatureClass">solr.processor.Lookup3Signature</str>
+  </updateProcessor>
+
+  <updateRequestProcessorChain name="import.chain" processor="import">
+    <processor class="solr.LogUpdateProcessorFactory" />
+    <processor class="solr.RunUpdateProcessorFactory" />
+  </updateRequestProcessorChain>
+
 </config>
