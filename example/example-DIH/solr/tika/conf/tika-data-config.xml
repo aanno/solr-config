@@ -3,7 +3,7 @@
   <document>
     <entity name="file" processor="FileListEntityProcessor" dataSource="null"
             baseDir="${solr.install.dir}/example/exampledocs" fileName=".*pdf"
-            rootEntity="false" recursive="true" onError="skip">
+            rootEntity="false">
 
       <field column="file" name="id"/>
 
