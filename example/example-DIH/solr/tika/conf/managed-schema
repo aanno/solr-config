@@ -21,13 +21,14 @@
   <uniqueKey>id</uniqueKey>
 
   <field name="id" type="string" indexed="true" stored="true"/>
+  <field name="_version_" type="string" docValues="true"/>
+
   <field name="author" type="text_simple" indexed="true" stored="true"/>
   <field name="title" type="text_simple" indexed="true" stored="true" multiValued="true"/>
   <field name="format" type="string" indexed="true" stored="true"/>
 
   <!-- field "text" is searchable but it is not stored to save space -->
   <field name="text" type="text_simple" indexed="true" stored="false" multiValued="true"/>
-
 
   <!-- Uncomment the dynamicField definition to catch any other fields
    that may have been declared in the DIH configuration.

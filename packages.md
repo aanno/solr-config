@@ -24,4 +24,4 @@ for files _with signature_.
 
 ## Package repository
 
-Currently, there seems to be no (working) Solr package repository. Hence `bin/solr package add-repo <name/> <url/>` is of no use.
+Currently, there seems to be no (working) Solr package repository. Hence `bin/solr package add-repo <name/> <url/>` is of no use. 
