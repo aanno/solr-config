@@ -29,5 +29,5 @@ cp "$IMPORT_JAR" dist/solr-import-plugin-all-all.jar
 cp "$IMPORT_JAR" server/solr-webapp/webapp/WEB-INF/lib/solr-import-plugin-all-all.jar
 
 cat example/example-DIH/solr/tika/conf/tika-data-config.xml
-bin/solr -V -v -Denable.packages=true -a '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=18983' -a '-Xdebug' -e dih
+bin/solr -V -v -c -Denable.packages=true -a '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=18983' -a '-Xdebug' -e dih -d example/example-DIH/solr
 less example/example-DIH/logs/solr.log
