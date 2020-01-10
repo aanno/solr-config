@@ -24,9 +24,10 @@ bin/solr -V stop -all
 # cp "$DI_JAR" dist/solr-dataimporthandler-8.3.1.jar
 # cp "$DIE_JAR" dist/solr-dataimporthandler-extras-8.3.1.jar
 
-# does not work 
-# cp "$IMPORT_JAR" dist/solr-import-plugin-all-all.jar
-cp "$IMPORT_JAR" server/solr-webapp/webapp/WEB-INF/lib/solr-import-plugin-all-all.jar
+# does not work if not mentioned in solrconfig.xml
+cp "$IMPORT_JAR" dist/solr-import-plugin-all.jar
+# Wrong, will lead to classloader problems
+# cp "$IMPORT_JAR" server/solr-webapp/webapp/WEB-INF/lib/solr-import-plugin-all.jar
 
 # collections have to be created with
 # bin/solr create_collection -V -c tika -d example/example-DIH/solr/tika

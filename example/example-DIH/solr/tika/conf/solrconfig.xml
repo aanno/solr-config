@@ -40,6 +40,9 @@
 
   <!-- Load Data Import Handler and Apache Tika (extraction) libraries -->
   <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-dataimporthandler-.*\.jar"/>
+  <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-cell-.*\.jar"/>
+  <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-import-plugin-all.jar"/>
+  <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-import-plugin-all-.*\.jar"/>
   <lib dir="${solr.install.dir:../../../..}/contrib/extraction/lib" regex=".*\.jar"/>
 
   <requestHandler name="/select" class="solr.SearchHandler">
