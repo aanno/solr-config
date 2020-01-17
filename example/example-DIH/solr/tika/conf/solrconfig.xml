@@ -43,6 +43,7 @@
   <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-cell-.*\.jar"/>
   <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-import-plugin-all.jar"/>
   <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-import-plugin-all-.*\.jar"/>
+  <lib dir="${solr.install.dir:../../../..}/dist/ext" regex=".*\.jar"/>
   <lib dir="${solr.install.dir:../../../..}/contrib/extraction/lib" regex=".*\.jar"/>
 
   <requestHandler name="/select" class="solr.SearchHandler">

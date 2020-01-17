@@ -58,6 +58,9 @@
               <lib dir="./lib" />
     -->
 
+  <lib dir="${solr.install.dir:../../../..}/dist" regex=".*\.jar"/>
+  <lib dir="${solr.install.dir:../../../..}/dist/ext" regex=".*\.jar"/>
+  
   <!-- A 'dir' option by itself adds any files found in the directory
        to the classpath, this is useful for including all jars in a
        directory.

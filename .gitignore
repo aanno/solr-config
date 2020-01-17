@@ -31,3 +31,4 @@ dataimport.properties
 /bin/*.pid
 /example/exampledocs/ebooks
 
+!/dist/ext/*.jar
