@@ -61,7 +61,7 @@
     </lst>
   </requestHandler>
 
-  <updateProcessor class="org.github.aanno.solr.importplugin.ImportRequestProcessorFactory" name="import">
+  <updateProcessor class="org.github.aanno.solr.importplugin.TikaFileImportRequestProcessorFactory" name="import">
     <bool name="enabled">true</bool>
     <str name="signatureField">id</str>
     <bool name="overwriteDupes">false</bool>

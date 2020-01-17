@@ -95,6 +95,7 @@ SOLR_JAVA_MEM="-Xms512m -Xmx4096m"
 #SOLR_OPTS="$SOLR_OPTS -Dsolr.autoCommit.maxTime=60000"
 #SOLR_OPTS="$SOLR_OPTS -Dsolr.clustering.enabled=true"
 SOLR_OPTS="$SOLR_OPTS -Djava.util.concurrent.ForkJoinPool.common.parallelism=100"
+SOLR_OPTS="$SOLR_OPTS -ea -Dkotlinx.coroutines.debug"
 
 # Bug: https://issues.apache.org/jira/browse/SOLR-13606
 SOLR_OPTS="$SOLR_OPTS -Djava.locale.providers=JRE,SPI"
