@@ -21,6 +21,7 @@ pushd "$IMPORT_SRC"
 popd
 
 bin/solr -V stop -all
+rm example/example-DIH/logs/*
 # cp "$DI_JAR" dist/solr-dataimporthandler-8.3.1.jar
 # cp "$DIE_JAR" dist/solr-dataimporthandler-extras-8.3.1.jar
 

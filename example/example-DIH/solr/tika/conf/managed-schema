@@ -23,7 +23,7 @@
   <field name="id" type="string" indexed="true" stored="true"/>
   <field name="_version_" type="string" docValues="true"/>
 
-  <field name="author" type="text_simple" indexed="true" stored="true"/>
+  <field name="author" type="text_simple" indexed="true" stored="true" multiValued="true"/>
   <field name="title" type="text_simple" indexed="true" stored="true" multiValued="true"/>
   <field name="format" type="string" indexed="true" stored="true"/>
 
